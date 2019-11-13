@@ -1,0 +1,22 @@
+.loader {
+    position: absolute;
+    position: fixed;
+    z-index: 10000000;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+  
+  .loader > .loader-image {
+    position: absolute !important;
+    right: -100px;
+    min-width: 300px;
+    height: 100px;
+    width: 300px;;
+  }
