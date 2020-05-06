@@ -2,12 +2,6 @@ import React from "react";
 import { Loader } from "./Loader";
 import { getProducts } from "./actions.js"
 import "./products.css";
-const style = {
-    height: 20,
-    border: "1px solid green",
-    margin: 2,
-    padding: 2
-};
 
 class Products extends React.Component {
     constructor(props) {
@@ -58,7 +52,7 @@ class Products extends React.Component {
 
     renderBody = (products) => products.map((product, index) => {
         return (
-            <tr key={`${product.id}_${index}`} style={style}>
+            <tr key={`${product.id}_${index}`} >
                 <td>{index}</td>
                 <td >{product.id}</td>
                 <td style={{ fontSize: `${product.size}px` }}>{product.face}</td>
